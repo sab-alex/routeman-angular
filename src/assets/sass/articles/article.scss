@@ -1,0 +1,33 @@
+.article-item {
+    background-color: $bg-white;
+    margin-top: 15px;
+    border-radius: 2px;
+    padding-top: 10px;
+
+    .title-wrapper{
+        position: absolute;    
+        .title{
+            position: relative;
+            font-size: 14px;
+            font-family: "Lato Black","Open Sans",sans-serif;
+            font-size: 20px;
+            font-weight: 400;
+            text-transform: uppercase;
+            color: white;
+            padding: 10px;
+         }
+    }
+
+    .img-wrapper{
+        .image{
+            min-height: 300px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-position: 50% 50%;
+        }
+    }
+    .description{
+        font-size: 12px;
+    }
+}

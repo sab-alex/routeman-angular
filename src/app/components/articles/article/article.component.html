@@ -1,0 +1,21 @@
+<article class="row">
+  <div class="col-12 article-item">
+    <div class="title-wrapper">
+      <div class="title">
+        {{article.title}}
+      </div>
+    </div>
+    <div class="img-wrapper">
+      <div  class="image" 
+            [ngStyle]="{ 'background-image': 'url(' + article.mainPhoto().path_abs + ')'}">
+      </div>
+    </div>
+    <div class="description">
+      {{article.description}}
+    </div>
+    <div class="article-comments">
+      
+    </div>
+  </div>
+</article>
+
