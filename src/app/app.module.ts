@@ -5,17 +5,25 @@ import { AppComponent } from './app.component';
 import { ArticlesComponent } from './components/articles/articles.component';
 import { ArticleComponent } from './components/articles/article/article.component';
 import { AppRoutingModule } from './/app-routing.module';
-import {APP_BASE_HREF} from '@angular/common';
+import { CommentsComponent } from './components/comments/comments.component';
+import { CommentItemComponent } from './components/comments/comment-item/comment-item.component';
 
+import {APP_BASE_HREF} from '@angular/common';
 import {HttpModule} from '@angular/http';
 
-import {ArticlesHttpService} from './services/http/articles.http.service';
+import {ArticlesHttpService} from './services/http/articles-http.service';
+import {CommentsHttpService} from './services/http/comments-http.service';
+
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
     ArticlesComponent,
-    ArticleComponent
+    ArticleComponent,
+    CommentsComponent,
+    CommentItemComponent
   ],
   imports: [
     BrowserModule,
@@ -24,7 +32,8 @@ import {ArticlesHttpService} from './services/http/articles.http.service';
   ],
   providers: [
     {provide: APP_BASE_HREF, useValue : '/' },
-    ArticlesHttpService
+    ArticlesHttpService,
+    CommentsHttpService
   ],
   bootstrap: [AppComponent]
 })

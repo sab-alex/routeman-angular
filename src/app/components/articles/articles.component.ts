@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ArticlesHttpService } from '../../services/http/articles.http.service';
+import { ArticlesHttpService } from '../../services/http/articles-http.service';
 import { Article } from '../../models/articles/article.model';
 import {isNullOrUndefined} from 'util';
 

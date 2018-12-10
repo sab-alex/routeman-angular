@@ -1,11 +1,12 @@
 import {Injectable} from '@angular/core';
 import {HttpService} from './http.service';
 import {Http} from '@angular/http';
-import {Article} from './../../models/articles/article.model';
 
 
-@Injectable()
-export class ArticlesHttpService extends HttpService{
+@Injectable({
+  providedIn: 'root'
+})
+export class ArticlesHttpService extends HttpService {
 
   constructor(private http: Http) {
     super(http);
